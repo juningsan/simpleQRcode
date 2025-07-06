@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="https://fonts.google.com/specimen/Outfit">
-  
+
   <title>Frontend Mentor | QR code component</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    html, body {height: 100%; margin: 0; position: relative;}
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      position: relative;
+    }
+
     body {
       box-sizing: border-box;
       display: flex;
@@ -19,6 +27,7 @@
       align-items: center;
       background-color: hsl(212, 45%, 89%);
     }
+
     .card {
       width: 15%;
       padding: 1rem;
@@ -29,50 +38,74 @@
     }
 
     .text {
-      padding:1rem 0.3rem;
+      padding: 1rem 0.3rem;
     }
+
     .text h1 {
       color: hsl(218, 44%, 22%);
       font-size: 18px;
       font-weight: 700;
     }
+
     .text p {
       color: hsl(216, 15%, 48%);
       font-size: 15px;
       font-weight: 400;
     }
-    .qr-code{
+
+    .qr-code {
       width: 100%;
       aspect-ratio: 1/1;
       background-image: url("./images/image-qr-code.png");
       background-size: 100% 100%;
       border-radius: 10px;
     }
-    .text {text-align: center;}
-    .attribution { position: fixed; bottom: 0; font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .card {vertical-align: middle; }
 
-      @media (max-width: 768px) {
-      .card {width: 80%;}
+    .text {
+      text-align: center;
+    }
+
+    .attribution {
+      position: fixed;
+      bottom: 0;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .card {
+      vertical-align: middle;
+    }
+
+    @media (max-width: 768px) {
+      .card {
+        width: 80%;
+      }
     }
   </style>
 </head>
+
 <body>
 
-  
 
-  <div class="card">
+  <main>
+    <div class="card">
       <div class="qr-code"></div>
       <div class="text">
-      <h1>Improve your front-end skills by building projects</h1>
-      <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+        <h1>Improve your front-end skills by building projects</h1>
+        <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
       </div>
     </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Eliot</a>.
-  </div>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Eliot</a>.
+    </div>
+  </footer>
 </body>
+
 </html>
